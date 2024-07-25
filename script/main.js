@@ -20,5 +20,9 @@ function updateText() {
     careerIndex++;
     characterIndex = 0;
   }
+
+  if (careerIndex === careers.length) {
+    careerIndex = 0;
+  }
   setTimeout(updateText, 400);
 }
